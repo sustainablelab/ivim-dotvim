@@ -2,7 +2,7 @@
 " Created: 2019-12-7
 " iPad .vimrc is located in $HOME/.vimrc
 " see ~/vim-notes.md
-" TODO: install timpope's surrounds.vim
+" TODO: install timpope's repeat.vim
 " TODO: install NERDTree
 "}}}
 " Vim behavior{{{
@@ -177,12 +177,16 @@ nnoremap <C-Down> :wincmd-<CR>"}}}
 " Turn on relative line numbers{{{
 nnoremap <leader>ln :set number relativenumber<CR>
 "}}}
+" Markdown FoldToggle: flat / nested{{{
+nnoremap <leader>fo :FoldToggle<CR>
+"}}}
 " Diff{{{
 nnoremap <leader>dt :diffthis<CR>
 nnoremap <leader>do :diffoff<CR>
 "}}}
-" Path to clipboard
+" Path to clipboard{{{
 nnoremap <leader>% :let @" = expand("%")<CR>
+"}}}
 "}}}
 
 " vim:set fdm=marker:
